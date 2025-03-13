@@ -10,20 +10,20 @@
     <title>Document</title>
     <style>
         .container{
-            padding: 3rem;
+            padding: 1rem;
             height: 8rem;
             width: 8rem;
             background-color: pink;
+            margin-bottom:2rem;
         }
     </style>
 </head>
 <body>
-    <?php foreach ($menu = mysqli_fetch_assoc($result) as $mn) : ?>
-        <?php var_dump($mn); ?>
+    <?php while ($menu = mysqli_fetch_assoc($result) ) : ?>
         <div class="container">
             <p><?= $menu["nama_menu"]?></p>
             <p><?= $menu["desc_menu"]?></p>
         </div>
-    <?php endforeach;?>
+    <?php endwhile;?>
 </body>
 </html>

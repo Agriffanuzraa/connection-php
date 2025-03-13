@@ -9,7 +9,8 @@
     if(!$koneksi){
         die("koneksi gagal".$koneksi->connect_error);
     }else{
-        echo "berhasil";
+        // echo "berhasil";
+        echo "<script>alert('berhasil tersambung pada server')</script>";
     }
 
     // ambil data dari tabel menu
