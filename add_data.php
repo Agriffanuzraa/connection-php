@@ -13,7 +13,8 @@ if (isset($_POST["submit"])) {
         echo "menu berhasil ditambahkan!";
         header("Location: display.php");
     } else {
-        echo "❌ Error: " . $query . "<br>" . $koneksi->error;
+        echo "❌ Error: " ;
+        $koneksi->error;
     }
 
     $koneksi->close(); // Tutup koneksi
